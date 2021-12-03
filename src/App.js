@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components';
+import { ListPokemon } from './ListPokemon';
+import { InfoPokemon } from './InfoPokemon';
+import { Header } from './Header';
 
-function App() {
+const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
+const Content = styled.div`
+  display: flex;
+  height: 100%;
+  background-image: url(https://i.imgur.com/NcLZcdn.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+`;
+
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Body>
+      <Header/>
+      <Content>
+        <ListPokemon/>
+        <InfoPokemon/>
+      </Content>
+    </Body>
+  )
 }
 
-export default App;
