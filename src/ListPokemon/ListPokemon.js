@@ -29,7 +29,7 @@ const GridPokemons = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  height: 100%;
+  height: 93%;
   overflow-y: auto;
 `;
 const pokemon = {

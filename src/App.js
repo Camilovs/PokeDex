@@ -14,7 +14,7 @@ const Content = styled.div`
   background-image: url(https://i.imgur.com/NcLZcdn.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
+  height: 92%;
 `;
 
 export const App = () => {
