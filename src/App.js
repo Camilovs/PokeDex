@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import { ListPokemon } from './ListPokemon';
 import { InfoPokemon } from './InfoPokemon';
 import { Header } from './Header';
+import { ListPokemon } from './ListPokemon/ListPokemon';
 
 const Body = styled.div`
   display: flex;
@@ -11,10 +11,10 @@ const Body = styled.div`
 `;
 const Content = styled.div`
   display: flex;
-  height: 100%;
   background-image: url(https://i.imgur.com/NcLZcdn.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 100%;
 `;
 
 export const App = () => {
